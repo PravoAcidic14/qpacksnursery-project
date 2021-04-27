@@ -1,0 +1,663 @@
+body{
+	overflow-x: hidden;
+	color: white;
+	margin: 0;
+}
+html{
+}
+
+
+@font-face{
+	font-family: brandFont;
+	src: url("fonts/simplifica.ttf");
+
+}
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555; 
+}
+
+/*------------------------------NAV_BAR----------------------------------------*/
+.smart-scroll{
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+}
+.scrolled-down{
+	transform: translateY(-100%); 
+	transition: all 0.3s ease-in-out;
+}
+.scrolled-up{
+	transform: translateY(0); 
+	transition: all 0.3s ease-in-out;
+}
+.navbar{
+	background-color: transparent;
+}
+.navbar.scrolled{
+	color: #1E2019;
+	background-color: #F9F8F8;
+	z-index: 3px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+.navbar.scrolled .brand{
+	color: #1E2019;
+}
+.navbar.scrolled .nav-item .nav-link span{
+	color: #1E2019;
+}
+.navbar.scrolled .contact-icons .nav-item .nav-link span{
+	color: #1E2019;
+}
+.brand{
+	font-family: 'Cinzel', serif;
+	color: white;
+}
+.brand-dark {
+	font-family: 'Cinzel', serif;
+	color: #1E2019;
+}
+.abs-center-x {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.nav-item .nav-link span{
+	font-family: 'Philosopher', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	color: white;
+}
+.nav-item .nav-dark span{
+	color: #1E2019;
+}
+.navbar-nav > li{
+	padding-left:30px;
+	padding-right:30px;
+}
+.contact-icons > li{
+	padding-left:20px;
+	padding-right:20px;
+}
+.contact-icons .nav-item .nav-link span{
+	color: white;
+	font-size: 25px;
+}
+.contact-icons .nav-item .nav-dark span{
+	color: #1E2019;
+	font-size: 25px;
+}
+
+
+/*-----------------------------------INDEX---------------------------------------------*/
+
+
+.jumbotron{
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+}
+#mainContainer{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+
+}
+.bgImageContainer{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-image: url(/nursery/images/slides_1.jpg);
+	background-color: rgba(0,0,0,0.5);
+	background-blend-mode: multiply;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: all 1s;
+}
+#labelContainer{
+	margin-left: 100px;
+	width: 100%;
+	height: 200px;
+	position: absolute;
+	top:30%;
+
+}
+#slideControlContainer{
+	position: absolute;
+	float: right;
+	bottom: 10%;
+	right: 150px;
+	height: 130px;
+	width: 350px;
+	margin: 0;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.aboutContainer{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	width: 100%;
+	position: relative;
+	background-color: #FFFCDD;
+	padding-right: 0;
+	padding-left: 0;
+
+}
+#aboutTextBg{
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: 20%;
+	bottom: 0;
+	left: -5%;
+	color: rgba(55, 140, 36, 0.5);
+	font-family: 'Alata', serif;
+	font-size: 20vw;
+}
+.aboutImage{
+	position: relative;
+	height: 70%;
+	width: 35%;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	box-shadow: 10px 8px 10px rgba(0, 0, 0, 0.5);
+	margin-right: 100px;
+}
+.aboutDescSection{
+	position: relative;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	margin: 0;
+	padding: 20px;
+	padding-left: 35px;
+	padding-right: 35px;
+}
+.aboutDescSection h1{
+	position: relative;
+	font-family: 'Crimson Text', serif;
+	color: #1E2019;
+	padding-top: 20px;
+	font-size: 3vw;
+	top: 3%;
+}
+.aboutDescSection p{
+	position: relative;
+	font-family: 'Poppins', serif;
+	font-weight: 400;
+	color: #1E2019;
+	text-align: left;
+	font-size: 1.3vw;
+	line-height: 2.5vw;
+	margin-top: 15%;
+}
+.aboutDescSection ul li{
+	color: #1E2019;
+	font-family: 'Poppins', serif;
+	font-size: 1.3vw;
+	font-weight: 400;
+}
+
+.label-header{
+	display: block;
+	position: absolute;
+	height: 100px;
+	margin-left: 40px;
+	font-size: 2.7rem;
+	letter-spacing: 0.3px;
+	text-align: left;
+	color: rgba(255, 255, 255, 1.0);
+	visibility: hidden;
+}
+.label-desc{
+	position: absolute;
+	display: block;
+	bottom: 15%;
+	margin-left: 43px;
+	font-size: 1.2rem;
+	color: rgba(255, 255, 255, 0.8);
+	text-align: left;
+	visibility: hidden;
+
+}
+.servicesSection{
+	width: 100%;
+	padding: 5%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: rgb(8, 15, 7);
+	color: black;
+}
+#servicesTextBg{
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: 20%;
+	bottom: 0;
+	right: -3%;
+	color: rgba(255, 252, 221, 0.5);
+	font-family: 'Alata', serif;
+	font-size: 20vw;
+}
+.servicesSection .card{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 350px;
+	height: 300px;
+	margin: 20px;
+	background-color: transparent;
+	border-radius: 20px;
+	border-color: transparent;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+	transition: all 0.5s;
+	filter: blur(0px);
+	transform: scale(1.0);
+	opacity: 1.0;
+}
+.servicesSection .card h3{
+	transition: all 0.5s;
+	font-family: 'Alata', serif;
+	font-size: 2.5rem;
+	padding: 3%;
+	color: #fff;
+	text-align: center;
+}
+.servicesSection .card a{
+	position: relative;
+	font-family: 'Poppins', serif;
+	font-size: 1rem;
+	font-weight: 600;
+	text-align: center;
+	background-color: rgb(8, 15, 7);
+	color: white;
+	padding: 10px;
+	height: 45px;
+	width: 190px;
+	border-radius: 100px;
+	visibility: hidden;
+	transition: all 1s;
+}
+.servicesSection .card:hover{
+	transform: scale(1.1);
+	opacity: 1;
+	background-color: rgba(0, 0, 0, 0.3);
+	background-blend-mode: multiply;
+}
+.servicesSection .card:hover a{
+	animation: services-btn 1.0s ease;
+	animation-fill-mode: forwards;
+}
+.servicesSection .card a:hover{
+	transition: all 1s;
+	text-decoration: none;
+	background-color: white;
+	font-size: 1rem;
+	font-weight: 600;
+	color: rgb(8, 15, 7);
+}
+.servicesSection .card:nth-child(2){
+	background-image: url(/nursery/images/service_1.jpg);
+}
+.servicesSection .card:nth-child(3){
+	background-image: url(/nursery/images/service_2.jpg);
+}
+.servicesSection .card:nth-child(4){
+	background-image: url(/nursery/images/service_3.jpg);
+}
+.servicesSection .card:nth-child(5){
+	background-image: url(/nursery/images/service_4.jpg);
+}
+.servicesSection .card:nth-child(6){
+	background-image: url(/nursery/images/service_5.jpg);
+}
+.pastProject{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 80%;
+	background-image: url(/nursery/images/past_project_thumbnail.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: rgba(0, 0, 0, 0.5);
+	background-blend-mode: multiply;
+	box-shadow: 0 8px 10px rgba(0, 0, 0, 0.7);
+	z-index: 1020;
+}
+.pastProject h2{
+	font-family: 'Alata', serif;
+	font-size: 5vw;
+	padding: 20px;
+}
+.pastProject h5{
+	font-family: 'Poppins', serif;
+	font-size: 1.3rem;
+	text-decoration: underline;
+}
+.companyShowcase{
+	position: relative; 
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: white;
+	height: 35%;
+	padding-right: 50px;
+	padding-left: 50px;
+}
+.companyShowcase img{
+	align-items: center;
+	filter: drop-shadow(5px 5px 5px #222);
+}
+.locationSection{
+	height: 90vh;
+	background-color: grey;
+	padding: 0;
+}
+.mainFooter{
+	background-color: #3B4D68;
+	padding: 20px;
+	color: #E5E5E5;
+}
+.navigationButtons{
+	margin-top: 40px;
+	display: flex;
+	left: 0;
+	height: 90px;
+	width: 380px;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	color: #D6D6D6;
+}
+.footerContact{
+	display: flex;
+	list-style-type: none;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.footerContact > li{
+	list-style: none;
+	display: inline-block;
+	width: calc(220px / 3);
+	text-align: center;
+}
+.footerContact > li > a > span{
+	font-size: 25px;
+	padding-right: 15px;
+	color: #D6D6D6;
+}
+.list-unstyled > li > a{
+	color: #D6D6D6; 
+	text-decoration: none;
+	text-transform: lowercase;
+}
+.footer-copyright{
+	text-align: center;
+	color: black;
+}
+.footer-logo{
+	color: #E5E5E5;
+	font-family: 'Cinzel', serif;
+}
+.footer-logo-hr{
+	color: #292929;
+	height: 3px;
+}
+
+span.brandName{
+	font-family: "Cinzel", sans-serif;
+}
+.slidesCounter{
+	float: right;
+	height: 70px;
+}
+i.arrowBtn{
+	font-size: 2rem;
+	box-sizing: border-box;
+	padding: 10px;
+	margin: 15px;
+	float: left;
+	cursor: pointer;
+	transition: 0.5s ease;
+}
+i.arrowBtn:hover{
+	font-size: 2.5rem;
+	transition: 0.5s ease;
+}
+.slidesCounterDynamic{
+	box-sizing: border-box;
+	float: left;
+	padding: 10px;
+	padding-right: 15px;
+	margin: 0;
+}
+.slidesCounterStatic{
+	box-sizing: border-box;
+	padding-top: 15px;
+	float: right;
+}
+
+.rectangle{
+	position: absolute;
+	display: block;
+	margin-top: 8px;
+	height: 90px;
+	width: 25px;
+	background-color: rgba(0, 0, 0, 0.7);
+	visibility: hidden;
+}
+
+.detailsHeader{
+	background-color: #F9F8F8;
+	height: 100vh;
+}
+.detailsTitleContainer{
+	
+	background-color: #D6D6D6;
+	color: #1E2019;
+	width: 60vw;
+	height: 40vh;
+}
+
+
+/*ANIMATIONS-------------------------------------------------------------------------------*/
+
+.rectangle-anim{
+	animation: rect-anim 0.5s ease;
+	animation-fill-mode: forwards;
+}
+
+.label-header-anim{
+	animation: lh-anim 0.5s ease 0.1s;
+	animation-fill-mode: forwards;
+}
+
+.label-desc-anim{
+	animation: ld-anim-fade 0.7s ease 0.2s;
+	animation-fill-mode: forwards;
+	
+}
+.slidesCounterDynamic-anim-leave{
+	animation: slides-dynamic-anim-leave 1.0s ease;
+	animation-fill-mode: forwards;
+}
+.slidesCounterDynamic-anim-enter{
+	animation: slides-dynamic-anim-enter 1.0s ease;
+	animation-fill-mode: forwards;
+}
+
+.bgImageContainer.anim-enter{
+	transform: scale(1.2);
+
+}
+.about-anim{
+	animation: about-text-bg-anim 1.0s ease;
+	animation-fill-mode: forwards;
+}
+
+[data-aos="opacity"] {
+	opacity: 0.8;
+	transition-property: opacity;
+}
+[data-aos="opacity"].aos-animate{
+	opacity: 0.2;
+}
+
+[data-aos="gradient"]{
+	color: rgb(0, 0, 0);
+	transition-property: color;
+}
+[data-aos="gradient"].aos-animate{
+	color: rgb(47, 166, 20);
+}
+
+
+@keyframes rect-anim{
+	from {height: 0px; opacity: 0.5; visibility: visible;}
+	to {height: 90px; opacity: 0.7; visibility: visible;}
+}
+
+@keyframes lh-anim{
+	from {margin-left: 60px; opacity: 0.5; visibility: visible;}
+	to {margin-left: 40px; opacity: 1.0; visibility: visible;} 
+}
+
+@keyframes ld-anim-fade{
+	0% {opacity: 0.0; bottom: 25%; visibility: visible;}
+	25% {opacity: 0.8; bottom: 25%; visibility: visible;}
+	75% {bottom: 25%; visibility: visible;}
+	100% {bottom: 15%; visibility: visible;}
+}
+
+@keyframes slides-dynamic-anim-leave{
+	from {margin-top: 0px; opacity: 1.0; visibility: visible;}
+	to {margin-top: 30px; opacity: 0.0; visibility: visible;}
+}
+
+@keyframes slides-dynamic-anim-enter{
+	from {margin-bottom: 30px; opacity: 0.0; visibility: visible;}
+	to {margin-bottom: 0px; opacity: 1.0; visibility: visible;}
+}
+
+@keyframes about-text-bg-anim{
+	from {color: rgba(55, 140, 36, 0.5);}
+	to {color: rgba(55, 140, 36, 0.09);}
+}
+
+@keyframes services-btn{
+	0%{
+		opacity: 0;
+		margin-top: 50px;
+	}
+	100%{
+		visibility: visible;
+		opacity: 1.0;
+		margin-top: 10px;
+	}
+}
+
+/*------------------------ MEDIA QUERIES -----------------------------------*/
+
+@media (max-width: 1050px){
+	.footerContact > li{
+		width: auto;
+	}
+	.companyShowcase{
+		height: 50%;
+		grid-template-columns: auto auto auto;
+		
+	}
+}
+@media (max-width: 767px){
+	.footer-logo-hr{
+		width: auto;
+		text-align: center;
+	}
+	.footerContact{
+		width: 100%;
+		justify-content: center;
+		margin: auto;
+		margin-bottom: 50px;
+	}
+	.col-md-4{
+		margin-bottom: 20px;
+	}
+	.companyShowcase{
+		height: 70%;
+		grid-template-columns: auto auto;
+		padding-right: 15%;
+		padding-left: 15%;
+		grid-gap: 20px;
+	}
+	.aboutContainer{
+		display: flex;
+		flex-direction: column;
+	}
+	#aboutTextBg{
+		top: 60%;
+		font-size: 30vw;
+	}
+	.aboutImage{
+		order: 1;
+		margin: 0;
+		height: auto;
+		width: auto;
+		margin-top: 20px;
+	}
+	.aboutDescSection{
+		order: 2;
+		width: auto;
+	}
+	.aboutDescSection h1{
+		font-size: 2.5rem;
+	}
+	.aboutDescSection p{
+		margin-top: 10%;
+	}
+	.aboutDescSection p, .aboutDescSection ul li{
+		font-size: 100%;
+		line-height: normal;
+
+	}
+	
+}

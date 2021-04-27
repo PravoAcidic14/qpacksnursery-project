@@ -1,0 +1,19 @@
+2nd slide - <span>Photo by <a href="https://unsplash.com/@timbennettcreative?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Tim Bennett</a> on <a href="https://unsplash.com/s/photos/plant-nursery?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+3rd slide - <span>Photo by <a href="https://unsplash.com/@neslihangunaydin?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Neslihan Gunaydin</a> on <a href="https://unsplash.com/s/photos/dirt?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+4th slide - <span>Photo by <a href="https://unsplash.com/@seffen99?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Sven Brandsma</a> on <a href="https://unsplash.com/s/photos/tree-chainsaw?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+aboutDescBg - <span>Photo by <a href="https://unsplash.com/@freetousesoundscom?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Free To Use Sounds</a> on <a href="https://unsplash.com/s/photos/grass?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+service_1 - <span>Photo by <a href="https://unsplash.com/@jplstudio?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">James Lewis</a> on <a href="https://unsplash.com/s/photos/landscape-design?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+service_2 - <span>Photo by <a href="https://unsplash.com/@ptonchev?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Petar Tonchev</a> on <a href="https://unsplash.com/s/photos/lawn?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+service_3 - <span>Photo by <a href="https://unsplash.com/@markusspiske?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Markus Spiske</a> on <a href="https://unsplash.com/s/photos/gardening?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+service_4 - <span>Photo by <a href="https://unsplash.com/@gabrielj_photography?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Gabriel Jimenez</a> on <a href="https://unsplash.com/s/photos/garden-soil?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+service_5 - <span>Photo by <a href="https://unsplash.com/@geroldhinzen?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Gerold Hinzen</a> on <a href="https://unsplash.com/s/photos/chainsaw?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+past_project_thumbnail - <span>Photo by <a href="https://unsplash.com/@vidarnm?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Vidar Nordli-Mathisen</a> on <a href="https://unsplash.com/s/photos/balcony?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
